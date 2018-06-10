@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/tuberia.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 13.3634, 103.496 )
+
+[node name="TobiTheTuba" type="StaticBody2D" groups=[
+"tubin",
+]]
+
+position = Vector2( -131.944, 204.597 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+position = Vector2( -8.66962, -20.1142 )
+scale = Vector2( 1.2387, 1.53299 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Offset", "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( -9.48694, -20.3969 )
+shape = SubResource( 1 )
+
+
